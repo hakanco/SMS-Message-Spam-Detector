@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: spam-app-deployment
+  name: spam-detector-deployment
 spec:
   selector:
     matchLabels:
-      app: spam-filter-app
+      app: spam-detector
   replicas: 2
   template:
     metadata:
       labels:
-        app: spam-filter-app
+        app: spam-detector
     spec:
       containers:
-      - name: spam-filter-app-container
-        image: buildapp/spam-filter-app
+      - name: spam-detector-container
+        image: buildapp/spam-detector
         ports:
         - containerPort: 9090
 ---
@@ -22,11 +22,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: spam-filter-app-service
+  name: spam-detector-service
 spec:
   type: NodePort
   selector:
-    app: spam-filter-app
+    app: spam-detector
   ports:
     - protocol: TCP
       port: 9090
