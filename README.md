@@ -23,8 +23,9 @@ Jenkins CI/CD Pipeline to deploy a simple flask app to detect spam or ham onto K
        * sudo curl -L "https://kind.sigs.k8s.io/dl/v0.8.1/kind-$(uname)-amd64" -o /usr/local/bin/kind
        * sudo chmod +x /usr/local/bin/kind
        * kind get clusters
-   
-   
+   * ![create kind](https://user-images.githubusercontent.com/56145174/156448152-344ebe2c-048d-49fa-8a7a-f7c172f36a57.png)
+
+
    ## **Design on LucidChart**
    ![LucidChart](https://user-images.githubusercontent.com/56145174/156444108-f9520ce8-970f-47e0-bbf5-f8c3057b3c75.png)
 
