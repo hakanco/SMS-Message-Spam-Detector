@@ -10,6 +10,8 @@ Jenkins CI/CD Pipeline to deploy a simple flask app to detect spam or ham onto K
    * Made sure Kubernetes Cluster runs successfully using the following useful commands 
        * kubectl get services 
        * minikube service “service-name” <br>
+   ![sms-detector](https://user-images.githubusercontent.com/56145174/156450049-320f22db-7bb7-4690-87ab-7bc6962bc35b.PNG)
+
    * Started Jenkins locally on the master machine
        * Configured Jenkins and credentials
        * Installed required plugins
