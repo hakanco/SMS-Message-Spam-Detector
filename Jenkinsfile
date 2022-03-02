@@ -14,12 +14,13 @@ pipeline {
          }
       }
     }
-   stage('Deploy with playbook'){
+   stage('Deploy to Kubernetes Cluster'){
       steps{
         dir('./Documents/SMS-Message-Spam-Detector') {
             script{
                 sh 'kubectl apply -f kubernetes.yaml'
-            }
+                sh 'kubectl get all'
+           }
         }
      }
    }
