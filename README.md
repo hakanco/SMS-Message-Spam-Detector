@@ -18,7 +18,9 @@ Jenkins CI/CD Pipeline to deploy a simple flask app to detect spam or ham onto K
        * Clones the repository
        * Builds a Docker Image
        * Pushes the image to DockerHub repository
-       * Deploys the application to Kubernetes Cluster
+       * Deploys the application to Kubernetes Cluster <br>
+   ![deployment-with-jenkins](https://user-images.githubusercontent.com/56145174/156448747-6b4a7763-9b85-4ec0-bcf3-6207cc604dd4.PNG)
+
    * Installed kind (Kubernetes in Docker) (which is a tool runnning local kubernetes clusters using Docker Container nodes) using the following commands
        * sudo curl -L "https://kind.sigs.k8s.io/dl/v0.8.1/kind-$(uname)-amd64" -o /usr/local/bin/kind
        * sudo chmod +x /usr/local/bin/kind
