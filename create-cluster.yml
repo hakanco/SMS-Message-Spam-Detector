@@ -1,0 +1,6 @@
+- hosts: server1
+   
+  tasks:
+    - name: create and start kubernetes cluster
+      shell: kind create cluster --name spam-detector --config kind-config.yaml
+      register: output
