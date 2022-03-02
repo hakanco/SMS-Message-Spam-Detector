@@ -1,0 +1,14 @@
+---
+- hosts: server1
+  tasks:
+  - name: remove existing repository
+    shell: rm -rf SMS-Message-Spam-Detector
+    
+  - name: pull repository
+    shell: git clone git@github.com:hakanco/SMS-Message-Spam-Detector.git
+  
+  - name: deploy flask spam detector app
+    shell: kubectl apply -f ~/SMS-Message-Spam-Detector/kubernetes.yaml
+ 
+  - name: show all components of cluster
+    shell: kubectl get all

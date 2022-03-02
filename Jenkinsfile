@@ -16,12 +16,7 @@ pipeline {
     }
    stage('Deploy to Kubernetes Cluster'){
       steps{
-        dir('/home/ansible/Documents/SMS-Message-Spam-Detector') {
-            script{
-                sh 'kubectl apply -f kubernetes.yaml'
-                sh 'kubectl get all'
-           }
-        }
+        sh 'ansible-playbook deployment-playbook.yml'
      }
    }
   }
