@@ -22,7 +22,7 @@ Jenkins CI/CD Pipeline to deploy a simple flask app to detect spam or ham onto K
    * Installed kind (Kubernetes in Docker) (which is a tool runnning local kubernetes clusters using Docker Container nodes) using the following commands
        * sudo curl -L "https://kind.sigs.k8s.io/dl/v0.8.1/kind-$(uname)-amd64" -o /usr/local/bin/kind
        * sudo chmod +x /usr/local/bin/kind
-       * kind get clusters
+       * kind get clusters <br>
    ![create kind](https://user-images.githubusercontent.com/56145174/156448152-344ebe2c-048d-49fa-8a7a-f7c172f36a57.png)
 
 
