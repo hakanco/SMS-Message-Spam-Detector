@@ -30,10 +30,16 @@ Jenkins CI/CD Pipeline to deploy a simple flask app to detect spam or ham onto K
    ![create kind](https://user-images.githubusercontent.com/56145174/156448152-344ebe2c-048d-49fa-8a7a-f7c172f36a57.png)
    
    ![kind-deployment](https://user-images.githubusercontent.com/56145174/156459286-b893ee7b-203c-4fc6-81ff-683b2a4d5837.PNG)
+  
+   * Started the prometheus on local cluster and then monitored the cluster and visualized the cpu, memory and disk usage on spam app using Grafana.
+
+   ![node-exporter](https://user-images.githubusercontent.com/56145174/156645315-454d1f37-4c22-4823-826f-d14391459e05.PNG)
 
 
    ## **Design on LucidChart**
    ![LucidChart](https://user-images.githubusercontent.com/56145174/156444108-f9520ce8-970f-47e0-bbf5-f8c3057b3c75.png)
+   
+   
 
       
 
