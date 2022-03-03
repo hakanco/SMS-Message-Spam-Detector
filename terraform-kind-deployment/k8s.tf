@@ -37,7 +37,7 @@ resource "kubernetes_deployment" "spam-app" {
           name  = "spam-app"
 
           port {
-            container_port = 9090
+            container_port = 9091
           }
 
           resources {
@@ -66,8 +66,8 @@ resource "kubernetes_service" "spam-app" {
     }
     port {
       node_port   = 30333
-      port        = 9090
-      target_port = 9090
+      port        = 9091
+      target_port = 9091
     }
 
     type = "NodePort"
